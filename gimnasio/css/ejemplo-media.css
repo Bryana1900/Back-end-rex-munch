@@ -1,0 +1,46 @@
+#sct-contenedores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor1 {
+    width: 30%;
+    height: 200px;
+    background: rgb(238, 3, 172);
+    border: 2px solid black;
+}
+
+.contenedor2 {
+    width: 30%;
+    height: 200px;
+    background: rgb(43, 208, 226);
+    border: 2px solid black;
+}
+
+.contenedor3 {
+    width: 30%;
+    height: 200px;
+    background: rgb(73, 226, 43);
+    border: 2px solid black;
+}
+
+@media all and (max-width: 480px) {
+    #sct-contenedores {
+        flex-direction: column;
+    }
+    .contenedor1 {
+        background: chartreuse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contenedor2 {
+        background: brown;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contenedor3 {
+        background: darkorange;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
